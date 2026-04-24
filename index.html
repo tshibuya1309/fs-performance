@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>フィジカルトレーナー 渋谷泰紀 | 湘南・町田 サッカー専門トレーナー</title>
+  <meta name="description" content="湘南・町田エリアを中心に活動するフィジカルトレーナー渋谷泰紀。パーソナルトレーニング、チームトレーニング、オンラインサロン、フィジカルチェックなど。誰よりも強く、速いアスリートを育成します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ==================== RESET & BASE ==================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+      color: #1c1c1c;
+      background: #fff;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    :root {
+      --orange: #E8622A;
+      --orange-light: #F97D47;
+      --orange-pale: #FEF0EA;
+      --cream: #F7F4F0;
+      --dark: #1C1C1C;
+      --gray: #888888;
+      --light-gray: #F0EDE8;
+      --white: #FFFFFF;
+      --border: #E8E4DE;
+    }
+
+    /* ==================== HEADER ==================== */
+    #header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s;
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-img-wrap {
+      height: 38px;
+      display: flex;
+      align-items: center;
+    }
+    .logo-img-wrap img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+    .logo-text .name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: 0.04em;
+    }
+    .logo-text .sub {
+      font-size: 0.58rem;
+      color: var(--gray);
+      letter-spacing: 0.15em;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2px;
+      align-items: center;
+    }
+    nav ul li a {
+      color: var(--dark);
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 4px;
+      transition: all 0.2s;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+    nav ul li a:hover { background: var(--cream); }
+    .nav-cta {
+      background: var(--orange) !important;
+      color: #fff !important;
+      padding: 9px 20px !important;
+      border-radius: 24px !important;
+      font-weight: 700 !important;
+    }
+    .nav-cta:hover { background: var(--orange-light) !important; }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--dark);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    /* ==================== HERO ==================== */
+    #hero {
+      min-height: 100vh;
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      padding-top: 68px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-deco-circle {
+      position: absolute;
+      right: -120px;
+      bottom: -120px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: var(--orange);
+      opacity: 0.08;
+      pointer-events: none;
+    }
+    .hero-deco-circle2 {
+      position: absolute;
+      left: -60px;
+      top: 20%;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 40px solid var(--orange);
+      opacity: 0.06;
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 32px 80px;
+      display: grid;
+      grid-template-columns: 1fr 480px;
+      gap: 60px;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--orange);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 2px;
+      background: var(--orange);
+    }
+    .hero-title {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 900;
+      color: var(--dark);
+      line-height: 1.2;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+    .hero-title .accent {
+      color: var(--orange);
+      display: block;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--gray);
+      margin-bottom: 16px;
+      letter-spacing: 0.05em;
+    }
+    .hero-desc {
+      font-size: 0.92rem;
+      color: #555;
+      line-height: 1.9;
+      margin-bottom: 44px;
+      max-width: 480px;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-orange {
+      background: var(--orange);
+      color: #fff;
+      padding: 15px 36px;
+      border-radius: 32px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      letter-spacing: 0.04em;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-orange:hover {
+      background: var(--orange-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(232,98,42,0.3);
+    }
+    .btn-outline-dark {
+      background: transparent;
+      color: var(--dark);
+      padding: 15px 36px;
+      border-radius: 32px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      letter-spacing: 0.04em;
+      border: 2px solid var(--dark);
+      transition: all 0.3s;
+    }
+    .btn-outline-dark:hover {
+      background: var(--dark);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 52px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+    .hero-stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.4rem;
+      color: var(--orange);
+      line-height: 1;
+    }
+    .hero-stat-label {
+      font-size: 0.72rem;
+      color: var(--gray);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+    .hero-photo-wrap {
+      position: relative;
+    }
+    .hero-photo-frame {
+      width: 100%;
+      aspect-ratio: 3/4;
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero-photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+    .hero-photo-badge {
+      position: absolute;
+      bottom: 24px;
+      left: -24px;
+      background: #fff;
+      border-radius: 14px;
+      padding: 16px 20px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    }
+    .hero-photo-badge-label {
+      font-size: 0.68rem;
+      color: var(--orange);
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .hero-photo-badge-name {
+      font-size: 1rem;
+      font-weight: 900;
+      color: var(--dark);
+    }
+    .hero-photo-tag {
+      position: absolute;
+      top: 24px;
+      right: -16px;
+      background: var(--orange);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 24px;
+      letter-spacing: 0.08em;
+    }
+
+    /* ==================== SECTION COMMON ==================== */
+    section { padding: 100px 32px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--orange);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .section-eyebrow::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--orange);
+    }
+    .section-title {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 900;
+      color: var(--dark);
+      line-height: 1.25;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+    .section-desc {
+      color: var(--gray);
+      font-size: 0.92rem;
+      line-height: 1.9;
+      max-width: 560px;
+      margin-bottom: 56px;
+    }
+
+    /* ==================== PROFILE ==================== */
+    #profile { background: #fff; }
+    .profile-layout {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .profile-photo-card {
+      position: sticky;
+      top: 88px;
+    }
+    .profile-photo-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      background: var(--cream);
+      margin-bottom: 24px;
+    }
+    .profile-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+    .profile-name-block {
+      margin-bottom: 16px;
+    }
+    .profile-name {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+    .profile-name-en {
+      font-size: 0.82rem;
+      color: var(--gray);
+      letter-spacing: 0.15em;
+      margin-bottom: 12px;
+    }
+    .profile-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+    .tag {
+      background: var(--orange-pale);
+      color: var(--orange);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 20px;
+      letter-spacing: 0.04em;
+    }
+    .profile-sns {
+      display: flex;
+      gap: 10px;
+    }
+    .sns-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      border: 1.5px solid;
+      transition: all 0.2s;
+    }
+    .sns-ig { border-color: #e1306c; color: #e1306c; }
+    .sns-ig:hover { background: #e1306c; color: #fff; }
+    .sns-line { border-color: #06C755; color: #06C755; }
+    .sns-line:hover { background: #06C755; color: #fff; }
+    .profile-content {}
+    .profile-section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--orange);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin: 40px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .profile-section-label::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 2px;
+      background: var(--orange);
+    }
+    .profile-section-label:first-child { margin-top: 0; }
+    .profile-bio {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.9;
+      margin-bottom: 8px;
+    }
+    .profile-certs {
+      font-size: 0.85rem;
+      color: #555;
+      line-height: 2;
+    }
+    .career-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .career-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 14px 18px;
+      border-radius: 10px;
+      background: var(--cream);
+      font-size: 0.86rem;
+    }
+    .career-year {
+      color: var(--orange);
+      font-weight: 700;
+      font-size: 0.78rem;
+      white-space: nowrap;
+      min-width: 80px;
+    }
+    .career-org { color: var(--dark); }
+    .individual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .individual-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 16px;
+      background: var(--cream);
+      border-radius: 10px;
+      font-size: 0.82rem;
+      color: var(--dark);
+    }
+    .individual-item::before {
+      content: '✓';
+      color: var(--orange);
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    /* ==================== MISSION ==================== */
+    #mission {
+      background: var(--dark);
+      position: relative;
+      overflow: hidden;
+    }
+    .mission-deco {
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      border: 80px solid var(--orange);
+      opacity: 0.06;
+      pointer-events: none;
+    }
+    .mission-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .mission-quote {
+      font-size: 5rem;
+      color: var(--orange);
+      opacity: 0.25;
+      font-family: Georgia, serif;
+      line-height: 1;
+      margin-bottom: -16px;
+    }
+    .mission-headline {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.4;
+      margin-bottom: 52px;
+    }
+    .mission-headline .accent { color: var(--orange); }
+    .mission-blocks {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .mission-block {
+      padding: 28px 32px;
+      border-left: 3px solid rgba(255,255,255,0.06);
+      transition: all 0.3s;
+    }
+    .mission-block:hover {
+      border-left-color: var(--orange);
+      background: rgba(255,255,255,0.03);
+    }
+    .mission-block p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 2.1;
+    }
+    .mission-block strong { color: var(--orange); font-weight: 700; }
+    .mission-closing {
+      margin-top: 48px;
+      padding: 36px 40px;
+      background: rgba(232,98,42,0.1);
+      border: 1px solid rgba(232,98,42,0.3);
+      border-radius: 16px;
+      text-align: center;
+    }
+    .mission-closing p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.9;
+    }
+    .mission-closing .big-line {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--orange);
+      display: block;
+      margin-top: 10px;
+    }
+
+    /* ==================== PHILOSOPHY ==================== */
+    #philosophy { background: var(--cream); }
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+    .philosophy-card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .philosophy-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+    }
+    .philosophy-card-img {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+    .philosophy-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .philosophy-card:hover .philosophy-card-img img { transform: scale(1.04); }
+    .philosophy-card-body {
+      padding: 32px 36px 40px;
+    }
+    .philosophy-card-label {
+      display: inline-block;
+      border: 1.5px solid var(--orange);
+      color: var(--orange);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+    .philosophy-card-title {
+      font-size: 1.9rem;
+      font-weight: 900;
+      color: var(--dark);
+      margin-bottom: 6px;
+      line-height: 1.2;
+    }
+    .philosophy-card-en {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #999;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+    }
+    .philosophy-card-text {
+      font-size: 0.88rem;
+      color: #555;
+      line-height: 1.9;
+      margin-bottom: 28px;
+    }
+    .philosophy-card-text strong { color: var(--dark); font-weight: 700; }
+    .philosophy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--orange);
+      color: #fff;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 30px;
+      transition: all 0.2s;
+      letter-spacing: 0.04em;
+    }
+    .philosophy-btn:hover { background: #d43f00; transform: translateX(3px); }
+    @media (max-width: 768px) {
+      .philosophy-grid { grid-template-columns: 1fr; }
+      .philosophy-card-img { height: 240px; }
+      .philosophy-card-body { padding: 24px; }
+    }
+
+    /* ==================== SERVICES ==================== */
+    #services { background: #fff; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .service-card {
+      border-radius: 16px;
+      padding: 40px 36px;
+      background: var(--cream);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s;
+      border: 2px solid transparent;
+    }
+    .service-card:hover {
+      border-color: var(--orange);
+      background: #fff;
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(232,98,42,0.1);
+    }
+    .service-card-badge {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+    .service-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 4rem;
+      color: rgba(28,28,28,0.06);
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      line-height: 1;
+    }
+    .service-bar {
+      width: 28px;
+      height: 3px;
+      background: var(--orange);
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+    .service-name {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--dark);
+      margin-bottom: 12px;
+    }
+    .service-desc {
+      font-size: 0.85rem;
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .service-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .service-features li {
+      font-size: 0.82rem;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .service-features li::before {
+      content: '';
+      width: 5px; height: 5px;
+      background: var(--orange);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ==================== ONLINE SALON ==================== */
+    #salon { background: var(--dark); }
+    .salon-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .salon-content .section-title { color: #fff; }
+    .salon-content .section-desc { color: rgba(255,255,255,0.55); }
+    .salon-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+    .salon-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.9rem;
+    }
+    .salon-list li::before {
+      content: '';
+      width: 8px; height: 8px;
+      background: var(--orange);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .salon-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 36px;
+    }
+    .salon-card-header {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--orange);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .salon-card-title {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 28px;
+    }
+    .salon-items {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .salon-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+    }
+    .salon-item-icon {
+      width: 38px; height: 38px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .salon-item-name {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+    .salon-item-sub {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.45);
+    }
+    .salon-card-footer {
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      gap: 20px;
+      font-size: 0.76rem;
+      color: rgba(255,255,255,0.35);
+    }
+    .salon-card-footer strong { color: rgba(255,255,255,0.65); }
+
+    /* ==================== FLOW ==================== */
+    #flow { background: var(--cream); }
+    .flow-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .flow-grid::before {
+      content: '';
+      position: absolute;
+      top: 38px;
+      left: calc(12.5% + 16px);
+      right: calc(12.5% + 16px);
+      height: 2px;
+      background: linear-gradient(to right, var(--orange), rgba(232,98,42,0.2));
+      z-index: 0;
+    }
+    .flow-step {
+      text-align: center;
+      padding: 0 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .step-circle {
+      width: 76px; height: 76px;
+      border-radius: 50%;
+      background: var(--orange);
+      color: #fff;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      box-shadow: 0 6px 20px rgba(232,98,42,0.3);
+    }
+    .step-title {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .step-desc {
+      font-size: 0.78rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    /* ==================== CONTACT ==================== */
+    #contact { background: #fff; }
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding: 20px 24px;
+      background: var(--cream);
+      border-radius: 14px;
+    }
+    .contact-info-icon {
+      width: 44px; height: 44px;
+      background: var(--orange-pale);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+    .contact-info-label {
+      font-size: 0.75rem;
+      color: var(--gray);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .contact-info-value {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+    .contact-recommend {
+      background: var(--dark);
+      border-radius: 16px;
+      padding: 28px;
+      color: #fff;
+      margin-top: 8px;
+    }
+    .contact-recommend-title {
+      font-size: 0.9rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .contact-recommend ul {
+      list-style: none;
+      font-size: 0.83rem;
+      line-height: 2;
+      color: rgba(255,255,255,0.75);
+    }
+    .contact-recommend li::before { content: '✓ '; color: var(--orange); }
+    .contact-form-box {
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 44px;
+    }
+    .contact-form-title {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .contact-form-sub {
+      font-size: 0.87rem;
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+    .line-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #06C755;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 800;
+      padding: 17px 36px;
+      border-radius: 50px;
+      transition: all 0.3s;
+      box-shadow: 0 6px 20px rgba(6,199,85,0.25);
+      letter-spacing: 0.04em;
+    }
+    .line-btn:hover {
+      background: #05b34c;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(6,199,85,0.3);
+    }
+    .contact-note {
+      margin-top: 16px;
+      font-size: 0.78rem;
+      color: var(--gray);
+      text-align: center;
+    }
+    .contact-faq {
+      margin-top: 32px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+    .contact-faq-title {
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 12px;
+    }
+    .faq-item {
+      background: #fff;
+      border-radius: 10px;
+      padding: 13px 18px;
+      font-size: 0.82rem;
+      color: var(--dark);
+      border-left: 3px solid var(--orange);
+      margin-bottom: 8px;
+    }
+
+    /* ==================== FOOTER ==================== */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.5);
+      padding: 64px 32px 32px;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .footer-logo-img {
+      height: 36px;
+      width: auto;
+      object-fit: contain;
+    }
+    .footer-logo-text .name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .footer-logo-text .sub {
+      font-size: 0.58rem;
+      letter-spacing: 0.15em;
+    }
+    .footer-desc {
+      font-size: 0.82rem;
+      line-height: 1.8;
+    }
+    .footer-col-title {
+      font-family: 'Bebas Neue', sans-serif;
+      color: #fff;
+      font-size: 1rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 16px;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .footer-links a {
+      font-size: 0.82rem;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--orange); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 24px;
+      text-align: center;
+      font-size: 0.75rem;
+    }
+
+    /* ==================== MOBILE MENU ==================== */
+    @media (max-width: 900px) {
+      nav {
+        position: fixed;
+        top: 68px; left: 0; right: 0;
+        background: rgba(255,255,255,0.98);
+        padding: 20px 24px;
+        transform: translateY(-200%);
+        transition: transform 0.3s;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      }
+      nav.open { transform: translateY(0); }
+      nav ul { flex-direction: column; gap: 4px; }
+      nav ul li a { padding: 12px 16px; display: block; border-radius: 8px; }
+      .hamburger { display: flex; }
+    }
+
+    /* ==================== RESPONSIVE ==================== */
+    @media (max-width: 1024px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+      .hero-photo-wrap { max-width: 360px; margin: 0 auto; }
+      .hero-photo-badge { left: 0; }
+      .profile-layout { grid-template-columns: 1fr; }
+      .profile-photo-card { position: static; max-width: 360px; margin: 0 auto; }
+      .salon-layout { grid-template-columns: 1fr; }
+      .contact-layout { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      section { padding: 72px 20px; }
+      .nav-inner { padding: 0 20px; }
+      .hero-inner { padding: 40px 20px 60px; }
+      .hero-stats { gap: 20px; flex-wrap: wrap; }
+      .philosophy-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .flow-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .flow-grid::before { display: none; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .individual-grid { grid-template-columns: 1fr; }
+      .mission-block { padding: 20px 16px; }
+      .mission-closing { padding: 24px 20px; }
+      .contact-form-box { padding: 28px 24px; }
+    }
+    @media (max-width: 480px) {
+      .hero-btns { flex-direction: column; }
+      .hero-btns a { text-align: center; justify-content: center; }
+      .flow-grid { grid-template-columns: 1fr; }
+      .profile-sns { flex-wrap: wrap; }
+    }
+
+    /* ==================== ANIMATIONS ==================== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-up-delay-1 { transition-delay: 0.1s; }
+    .fade-up-delay-2 { transition-delay: 0.2s; }
+    .fade-up-delay-3 { transition-delay: 0.3s; }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header id="header">
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-img-wrap">
+        <img src="images/fs-logo-mark-black.png" alt="F&S Performance">
+      </div>
+      <div class="logo-text">
+        <div class="name">渋谷泰紀</div>
+        <div class="sub">PHYSICAL TRAINER</div>
+      </div>
+    </div>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#hero">ホーム</a></li>
+        <li><a href="#profile">プロフィール</a></li>
+        <li><a href="#mission">ミッション</a></li>
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#salon">サロン</a></li>
+        <li><a href="#flow">ご利用の流れ</a></li>
+        <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section id="hero">
+  <div class="hero-deco-circle"></div>
+  <div class="hero-deco-circle2"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">湘南・町田エリア対応</div>
+      <h1 class="hero-title">
+        誰よりも強く、
+        <span class="accent">誰よりも速い</span>
+        アスリートへ。
+      </h1>
+      <p class="hero-subtitle">史上最高のパフォーマンスを、あなたに。</p>
+      <p class="hero-desc">
+        湘南・町田エリアを中心に活動するフィジカルトレーナー渋谷泰紀。
+        サッカーを中心に多様なスポーツの選手を対象に、
+        パーソナルから高校・チームまで幅広くサポートします。
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-orange">
+          無料相談はこちら
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#services" class="btn-outline-dark">サービスを見る</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">10+</div>
+          <div class="hero-stat-label">指導年数</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">6+</div>
+          <div class="hero-stat-label">チーム指導実績</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">4</div>
+          <div class="hero-stat-label">提供サービス</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap fade-up fade-up-delay-1">
+      <div class="hero-photo-frame">
+        <img src="images/hero-portrait.jpg" alt="渋谷泰紀 フィジカルトレーナー">
+      </div>
+      <div class="hero-photo-badge">
+        <div class="hero-photo-badge-label">Physical Trainer</div>
+        <div class="hero-photo-badge-name">渋谷 泰紀</div>
+      </div>
+      <div class="hero-photo-tag">湘南・町田</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROFILE ========== -->
+<section id="profile">
+  <div class="container">
+    <div class="section-eyebrow">PROFILE</div>
+    <h2 class="section-title">フィジカルトレーナー<br>渋谷 泰紀について</h2>
+    <p class="section-desc">湘南ベルマーレアスレティックセンターでの経験を活かし、現在は湘南・町田エリアを中心にサッカーをはじめ多様なスポーツ選手のフィジカル強化をサポートしています。</p>
+    <div class="profile-layout">
+      <div class="profile-photo-card fade-up">
+        <div class="profile-photo-wrap">
+          <img src="images/profile.jpg" alt="渋谷泰紀"
+               onerror="this.style.display='none'">
+        </div>
+        <div class="profile-name-block">
+          <div class="profile-name">渋谷 泰紀</div>
+          <div class="profile-name-en">Taiki Shibuya</div>
+          <div class="profile-tags">
+            <span class="tag">フィジカルトレーナー</span>
+            <span class="tag">サッカー専門</span>
+            <span class="tag">湘南・町田</span>
+          </div>
+        </div>
+        <div class="profile-sns">
+          <a href="https://www.instagram.com/shibuya_taiki/" target="_blank" class="sns-btn sns-ig">Instagram</a>
+          <a href="https://line.me/R/ti/p/%40525hghaz" target="_blank" class="sns-btn sns-line">LINE公式</a>
+        </div>
+      </div>
+      <div class="profile-content fade-up fade-up-delay-1">
+        <div class="profile-section-label">経歴</div>
+        <p class="profile-bio">常葉学園浜松大学卒業。東京スポーツ・レクリエーション専門学校アスレティックトレーナー養成科卒業。湘南ベルマーレスポーツクラブ（辻堂アスレティックセンター）でパーソナルトレーニング、ジュニアアスリート向けクリニックに従事。2019年よりフリーランスとして独立。</p>
+
+        <div class="profile-section-label">保有資格・修了</div>
+        <p class="profile-certs">
+          中・高保健体育教員免許状<br>
+          School of Movement® トリプルスター修了<br>
+          PRI Myokinematic Restoration 修了<br>
+          栄養コンシェルジュ® 二つ星修了
+        </p>
+
+        <div class="profile-section-label">現在の指導実績</div>
+        <ul class="career-list">
+          <li class="career-item">
+            <span class="career-year">2015年〜</span>
+            <span class="career-org">横浜GSFCJr.ユース</span>
+          </li>
+          <li class="career-item">
+            <span class="career-year">2017年〜</span>
+            <span class="career-org">YTCFCJr.チーム・Jr.ユース</span>
+          </li>
+          <li class="career-item">
+            <span class="career-year">2024年〜</span>
+            <span class="career-org">私立横浜商科大学高校 サッカー部</span>
+          </li>
+          <li class="career-item">
+            <span class="career-year">2024年〜</span>
+            <span class="career-org">川崎市立幸高校サッカー部</span>
+          </li>
+        </ul>
+
+        <div class="profile-section-label">過去の指導実績</div>
+        <ul class="career-list">
+          <li class="career-item">
+            <span class="career-year">2019-2024</span>
+            <span class="career-org">私立武相高校サッカー部</span>
+          </li>
+          <li class="career-item">
+            <span class="career-year">2015-2019</span>
+            <span class="career-org">湘南ベルマーレアスレティックセンター</span>
+          </li>
+          <li class="career-item">
+            <span class="career-year">2020-2022</span>
+            <span class="career-org">カルぺソール湘南 Jr.チーム・Jr.ユース</span>
+          </li>
+          <li class="career-item">
+            <span class="career-year">2016-2018</span>
+            <span class="career-org">横浜ウインズ（女子サッカーチーム）</span>
+          </li>
+          <li class="career-item">
+            <span class="career-year">2019</span>
+            <span class="career-org">ラグビー静岡県高校選抜帯同</span>
+          </li>
+        </ul>
+
+        <div class="profile-section-label">個人指導実績</div>
+        <div class="individual-grid">
+          <div class="individual-item">プロビーチバレープレイヤー トレーニングサポート</div>
+          <div class="individual-item">プロトライアスリート トレーニングサポート</div>
+          <div class="individual-item">J下部ジュニアユース選手</div>
+          <div class="individual-item">強豪高校サッカー選手</div>
+          <div class="individual-item">テニスIH優勝選手</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MISSION ========== -->
+<section id="mission">
+  <div class="mission-deco"></div>
+  <div class="container">
+    <div class="mission-inner">
+      <div class="section-eyebrow" style="color:var(--orange); justify-content:center; margin-bottom:16px;">MY MISSION</div>
+      <div class="mission-quote">"</div>
+      <h2 class="mission-headline fade-up">
+        選手がグラウンドに立てない日ほど、<br>
+        <span class="accent">無駄な時間はありません。</span>
+      </h2>
+      <div class="mission-blocks">
+        <div class="mission-block fade-up">
+          <p>怪我で試合に出られない。練習を休まざるを得ない。<br>
+          その１日１日が、二度と戻らない<strong>成長の時間</strong>です。<br>
+          特に育成年代の選手にとって「今」は一生に一度しかありません。</p>
+        </div>
+        <div class="mission-block fade-up fade-up-delay-1">
+          <p>「成長期だから仕方ない」「痛みはトレーニングの証」——<br>
+          そんな言葉で何度、選手の可能性が摘み取られてきたか。<br>
+          <strong>ケガのほとんどは、防げます。</strong><br>
+          正しい知識と、身体の使い方を根本から変えるアプローチがあれば。</p>
+        </div>
+        <div class="mission-block fade-up fade-up-delay-2">
+          <p>私が届けるのは、ただの筋力トレーニングではありません。<br>
+          <strong>「強く、速く、効率よく動く身体」</strong>をつくることで、<br>
+          選手がグラウンドに立ち続けられる時間を、最大限に守ります。</p>
+        </div>
+        <div class="mission-block fade-up fade-up-delay-3">
+          <p>動作の改善がスピードを生み、身体の使い方を変えることが怪我を防ぎます。<br>
+          一つひとつのトレーニングに、必ず意味があります。<br>
+          ケガをしてから対処するのではなく、<strong>そもそもケガをしない身体をつくります。</strong></p>
+        </div>
+      </div>
+      <div class="mission-closing fade-up">
+        <p>
+          選手の身体と真剣に向き合い、競技人生を守ります。<br>
+          それが私の、揺るぎないミッションです。
+          <span class="big-line">すべては、選手がピッチに立ち続けるために。</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PHILOSOPHY ========== -->
+<section id="philosophy">
+  <div class="container">
+    <div class="section-eyebrow">PHILOSOPHY</div>
+    <h2 class="section-title">トレーニングの２つの柱</h2>
+    <p class="section-desc">私の指導は「ストレングストレーニング」と「ムーブメントトレーニング」という2つの軸で構成されています。この2つが交わるところに、真の競技力向上があります。</p>
+
+    <div class="philosophy-grid">
+      <!-- Pillar 01: ストレングス -->
+      <div class="philosophy-card fade-up">
+        <div class="philosophy-card-img">
+          <img src="images/strength/BSQ.jpg" alt="ストレングストレーニング">
+        </div>
+        <div class="philosophy-card-body">
+          <span class="philosophy-card-label">Pillar 01</span>
+          <div class="philosophy-card-title">ストレングス<br>トレーニング</div>
+          <div class="philosophy-card-en">Strength Training</div>
+          <div class="philosophy-card-text">
+            「強さ」とは、ただ筋肉を大きくすることではありません。<strong>競技に使える力を、正しく出力できる身体をつくること</strong>です。選手の競技特性と身体の癖を分析した上で、動作に直結するパワーを引き出すプログラムを設計します。
+          </div>
+          <a href="#contact" class="philosophy-btn">詳しく見る →</a>
+        </div>
+      </div>
+      <!-- Pillar 02: ムーブメント -->
+      <div class="philosophy-card fade-up fade-up-delay-1">
+        <div class="philosophy-card-img">
+          <img src="images/movement/lateral-start.jpg" alt="ムーブメントトレーニング">
+        </div>
+        <div class="philosophy-card-body">
+          <span class="philosophy-card-label">Pillar 02</span>
+          <div class="philosophy-card-title">ムーブメント<br>トレーニング</div>
+          <div class="philosophy-card-en">Movement Training</div>
+          <div class="philosophy-card-text">
+            速さとは、足が速いことではありません。<strong>「正しく動く」ことが、最速への近道です。</strong>School of Movement® メソッドで動きの質・効率・協調性を根本から変え、ケガをしない身体の使い方を身につけます。
+          </div>
+          <a href="#contact" class="philosophy-btn">詳しく見る →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section id="services">
+  <div class="container">
+    <div class="section-eyebrow">SERVICES</div>
+    <h2 class="section-title">提供サービス</h2>
+    <p class="section-desc">選手の目標やニーズに合わせた4つのプログラムを提供しています。初めての方もお気軽にご相談ください。</p>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-badge" style="display:inline-block; background:var(--orange); color:#fff; font-size:0.68rem; font-weight:700; padding:4px 12px; border-radius:20px; letter-spacing:0.08em; margin-bottom:20px;">人気</div>
+        <div class="service-num">01</div>
+        <div class="service-bar"></div>
+        <div class="service-name">パーソナルトレーニング</div>
+        <p class="service-desc">個人の能力・目標に合わせてオーダーメイドのトレーニングプログラムを作成します。競技力向上から怪我の予防まで、一人ひとりに合ったアプローチで対応します。</p>
+        <ul class="service-features">
+          <li>完全マンツーマン指導</li>
+          <li>個人の課題・目標に合わせたプログラム</li>
+          <li>スピード・アジリティ・パワー向上</li>
+          <li>怪我予防・コンディショニング</li>
+        </ul>
+      </div>
+      <div class="service-card fade-up fade-up-delay-1">
+        <div class="service-num">02</div>
+        <div class="service-bar"></div>
+        <div class="service-name">チームトレーニング</div>
+        <p class="service-desc">チーム全体のフィジカルレベルを底上げします。戦術に合わせたフィジカル強化プログラムを提供し、チームの総合力向上をサポートします。</p>
+        <ul class="service-features">
+          <li>チーム全体のフィジカル分析</li>
+          <li>戦術に合わせた強化プログラム</li>
+          <li>中学・高校・クラブチーム対応</li>
+          <li>シーズン計画のサポート</li>
+        </ul>
+      </div>
+      <div class="service-card fade-up fade-up-delay-2">
+        <div class="service-badge" style="display:inline-block; background:var(--orange); color:#fff; font-size:0.68rem; font-weight:700; padding:4px 12px; border-radius:20px; letter-spacing:0.08em; margin-bottom:20px;">月額¥1,500</div>
+        <div class="service-num">03</div>
+        <div class="service-bar"></div>
+        <div class="service-name">オンラインサロン</div>
+        <p class="service-desc">いつでもどこでもトレーニング動画・コラム・Q&Aコンテンツにアクセスできる会員制サービス。選手も保護者も一緒に学べます。</p>
+        <ul class="service-features">
+          <li>いつでもどこでも見られるトレーニング動画</li>
+          <li>選手・保護者どちらも学べる！</li>
+          <li>スペシャルコンテンツも配信！</li>
+          <li>質問もできる！</li>
+          <li>月額¥1,500</li>
+        </ul>
+      </div>
+      <div class="service-card fade-up fade-up-delay-3">
+        <div class="service-badge" style="display:inline-block; background:var(--orange); color:#fff; font-size:0.68rem; font-weight:700; padding:4px 12px; border-radius:20px; letter-spacing:0.08em; margin-bottom:20px;">チーム向け</div>
+        <div class="service-num">04</div>
+        <div class="service-bar"></div>
+        <div class="service-name">フィジカルチェック</div>
+        <p class="service-desc">チーム全体のパフォーマンスを"見える化"する取り組みです。"なんとなく"をデータに変え、選手の強み・弱点を数値で明確にします。</p>
+        <ul class="service-features">
+          <li>スプリント（10m・30m）</li>
+          <li>アジリティ（アロウヘッド・10×3切り返し走）</li>
+          <li>瞬発力（垂直跳び・立ち5段跳び）</li>
+          <li>持久力（YO-YO テスト IR1）</li>
+          <li>レーダーチャートで結果をフィードバック</li>
+          <li>¥2,750／人（20名以上のチーム単位）</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ONLINE SALON ========== -->
+<section id="salon">
+  <div class="container">
+    <div class="salon-layout">
+      <div class="salon-content fade-up">
+        <div class="section-eyebrow" style="color:var(--orange);">ONLINE SALON</div>
+        <h2 class="section-title" style="color:#fff;">オンラインサロンで<br>ともに成長しよう</h2>
+        <p class="section-desc" style="color:rgba(255,255,255,0.55);">会員限定のトレーニング動画・コラム・Q&Aコンテンツを毎月配信。場所や時間を選ばず、フィジカルトレーナーの知識と指導を手元に届けます。</p>
+        <ul class="salon-list">
+          <li>いつでもどこでも見られるトレーニング動画</li>
+          <li>スプリント・アジリティ・ストレングスなど全ジャンル対応</li>
+          <li>トレーニングコラムを定期掲載</li>
+          <li>会員限定Q&Aでダイレクトに質問できる</li>
+          <li>いつでも解約可能な月額サブスク（¥1,500）</li>
+        </ul>
+        <a href="https://mosh.jp/services/251888?openExternalBrowser=1" target="_blank" class="btn-orange">
+          サロンに参加する（MOSH）
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="fade-up fade-up-delay-1">
+        <div class="salon-card">
+          <div class="salon-card-header">MEMBER CONTENT</div>
+          <div class="salon-card-title">会員限定コンテンツ</div>
+          <div class="salon-items">
+            <div class="salon-item">
+              <div class="salon-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polygon points="5,3 19,12 5,21" fill="rgba(255,255,255,0.7)"/></svg>
+              </div>
+              <div>
+                <div class="salon-item-name">トレーニング動画</div>
+                <div class="salon-item-sub">スプリント・アジリティ・ストレングス</div>
+              </div>
+            </div>
+            <div class="salon-item">
+              <div class="salon-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="rgba(255,255,255,0.7)" stroke-width="2"/><polyline points="14,2 14,8 20,8" stroke="rgba(255,255,255,0.7)" stroke-width="2"/></svg>
+              </div>
+              <div>
+                <div class="salon-item-name">トレーニングコラム</div>
+                <div class="salon-item-sub">栄養・リカバリー・フィジカル理論</div>
+              </div>
+            </div>
+            <div class="salon-item">
+              <div class="salon-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="rgba(255,255,255,0.7)" stroke-width="2"/></svg>
+              </div>
+              <div>
+                <div class="salon-item-name">会員限定Q&A</div>
+                <div class="salon-item-sub">トレーナーへ直接質問できる</div>
+              </div>
+            </div>
+            <div class="salon-item">
+              <div class="salon-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="rgba(255,255,255,0.7)" stroke-width="2"/><polyline points="12,6 12,12 16,14" stroke="rgba(255,255,255,0.7)" stroke-width="2"/></svg>
+              </div>
+              <div>
+                <div class="salon-item-name">月額サブスク</div>
+                <div class="salon-item-sub">いつでも入会・解約OK</div>
+              </div>
+            </div>
+          </div>
+          <div class="salon-card-footer">
+            <span>運営プラットフォーム：<strong>MOSH</strong></span>
+            <span>動画配信：<strong>Vimeo</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FLOW ========== -->
+<section id="flow">
+  <div class="container">
+    <div class="section-eyebrow">HOW IT WORKS</div>
+    <h2 class="section-title">ご利用の流れ</h2>
+    <p class="section-desc">初めての方でも安心してご利用いただけます。まずはお気軽にお問い合わせください。</p>
+    <div class="flow-grid">
+      <div class="flow-step fade-up">
+        <div class="step-circle">1</div>
+        <div class="step-title">お問い合わせ</div>
+        <p class="step-desc">フォーム・SNSからお気軽にご連絡ください。まずは相談から歓迎です。</p>
+      </div>
+      <div class="flow-step fade-up fade-up-delay-1">
+        <div class="step-circle">2</div>
+        <div class="step-title">無料カウンセリング</div>
+        <p class="step-desc">目標・現状・希望などをヒアリングし、最適なプランをご提案します。</p>
+      </div>
+      <div class="flow-step fade-up fade-up-delay-2">
+        <div class="step-circle">3</div>
+        <div class="step-title">プログラム作成</div>
+        <p class="step-desc">個人・チームに合わせたオーダーメイドのプログラムを作成します。</p>
+      </div>
+      <div class="flow-step fade-up fade-up-delay-3">
+        <div class="step-circle">4</div>
+        <div class="step-title">トレーニング開始</div>
+        <p class="step-desc">継続的なサポートで目標達成まで全力でバックアップします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-eyebrow">CONTACT</div>
+    <h2 class="section-title">お問い合わせ</h2>
+    <p class="section-desc">ご質問・ご相談はお気軽にどうぞ。お問い合わせから24時間以内にご返信いたします。</p>
+    <div class="contact-layout">
+      <div class="fade-up">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <div class="contact-info-label">対応エリア</div>
+            <div class="contact-info-value">湘南・町田エリア中心<br><span style="font-size:0.82rem; font-weight:400; color:var(--gray);">レンタルジム対応 / オンライン対応あり</span></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">⏱</div>
+          <div>
+            <div class="contact-info-label">返信時間</div>
+            <div class="contact-info-value">24時間以内を目安にご返信</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">💬</div>
+          <div>
+            <div class="contact-info-label">SNSでもお気軽に</div>
+            <div style="display:flex; gap:10px; margin-top:8px; flex-wrap:wrap;">
+              <a href="https://www.instagram.com/shibuya_taiki/" target="_blank" class="sns-btn sns-ig">Instagram</a>
+              <a href="https://line.me/R/ti/p/%40525hghaz" target="_blank" class="sns-btn sns-line">LINE公式</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-recommend">
+          <div class="contact-recommend-title">こんな方におすすめです</div>
+          <ul>
+            <li>サッカーのスピード・パワーを伸ばしたい</li>
+            <li>怪我をしにくいカラダを作りたい</li>
+            <li>チームのフィジカルレベルを向上させたい</li>
+            <li>プロを目指す選手のサポートをしたい</li>
+          </ul>
+        </div>
+      </div>
+      <div class="fade-up fade-up-delay-1">
+        <div class="contact-form-box">
+          <div class="contact-form-title">お問い合わせはLINEから</div>
+          <p class="contact-form-sub">ご質問・ご相談はLINE公式アカウントよりお気軽にどうぞ。まずは友だち追加後、メッセージをお送りください。</p>
+          <a href="https://line.me/R/ti/p/%40525hghaz" target="_blank" class="line-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 5.92 2 10.72c0 3.12 1.78 5.86 4.48 7.52-.18.64-.66 2.32-.76 2.68-.12.44.16.44.34.32.14-.1 1.86-1.26 2.62-1.76.42.06.84.1 1.28.1 5.52 0 10-3.92 10-8.72C22 5.92 17.52 2 12 2z" fill="white"/></svg>
+            LINE公式アカウントを友だち追加する
+          </a>
+          <p class="contact-note">※ 友だち追加後、お問い合わせ内容をメッセージにてお送りください</p>
+          <div class="contact-faq">
+            <div class="contact-faq-title">よくあるご相談</div>
+            <div class="faq-item">パーソナルトレーニングの料金・スケジュールについて</div>
+            <div class="faq-item">チームへの出張・フィジカルチェックのご依頼</div>
+            <div class="faq-item">オンラインサロンの詳細・入会について</div>
+            <div class="faq-item">まずは気軽に相談したい</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="logo-img-wrap">
+            <img src="images/fs-logo-mark-white.png" alt="F&S Performance" class="footer-logo-img">
+          </div>
+          <div class="footer-logo-text">
+            <div class="name">渋谷泰紀 フィジカルトレーナー</div>
+            <div class="sub">PHYSICAL TRAINER TAIKI SHIBUYA</div>
+          </div>
+        </div>
+        <p class="footer-desc">湘南・町田エリアを中心に活動するフィジカルトレーナー。パーソナルからチームまで、アスリートの可能性を最大限に引き出します。</p>
+      </div>
+      <div>
+        <div class="footer-col-title">MENU</div>
+        <ul class="footer-links">
+          <li><a href="#hero">ホーム</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#mission">ミッション</a></li>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#salon">オンラインサロン</a></li>
+          <li><a href="#flow">ご利用の流れ</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">SERVICE</div>
+        <ul class="footer-links">
+          <li><a href="#services">パーソナルトレーニング</a></li>
+          <li><a href="#services">チームトレーニング</a></li>
+          <li><a href="#salon">オンラインサロン</a></li>
+          <li><a href="#services">フィジカルチェック</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 フィジカルトレーナー 渋谷泰紀. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ---- Hamburger Menu ----
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main-nav');
+  hamburger.addEventListener('click', () => nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+  // ---- Scroll Animations ----
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
