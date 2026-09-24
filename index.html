@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>フィジカルトレーナー 渋谷泰紀 | 湘南・町田 サッカー専門トレーナー</title>
-  <meta name="description" content="湘南・町田エリアを中心に活動するフィジカルトレーナー渋谷泰紀。パーソナルトレーニング、チームトレーニング、オンラインサロン、フィジカルチェックなど。誰よりも強く、速いアスリートを育成します。">
+  <title>フィジカルトレーナー 渋谷泰紀 | 藤沢・横浜 サッカー専門トレーナー</title>
+  <meta name="description" content="藤沢・横浜エリアを中心に活動するフィジカルトレーナー渋谷泰紀。パーソナルトレーニング、チームトレーニング、フィジカルチェック、GPSデータ分析・アプリ運用など。誰よりも強く、速いアスリートを育成します。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -728,6 +728,14 @@
       color: var(--dark);
       margin-bottom: 12px;
     }
+    .service-name:has(+ .service-sub) { margin-bottom: 4px; }
+    .service-sub {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--orange);
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
     .service-desc {
       font-size: 0.85rem;
       color: var(--gray);
@@ -753,6 +761,32 @@
       background: var(--orange);
       border-radius: 50%;
       flex-shrink: 0;
+    }
+    .service-price {
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px dashed rgba(0,0,0,0.12);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .service-price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .service-price-label {
+      font-size: 0.82rem;
+      color: var(--gray);
+      font-weight: 600;
+    }
+    .service-price-value {
+      font-size: 1.15rem;
+      color: var(--dark);
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
     }
 
     /* ==================== ONLINE SALON ==================== */
@@ -1166,7 +1200,6 @@
         <li><a href="#profile">プロフィール</a></li>
         <li><a href="#mission">ミッション</a></li>
         <li><a href="#services">サービス</a></li>
-        <li><a href="#salon">サロン</a></li>
         <li><a href="#flow">ご利用の流れ</a></li>
         <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
       </ul>
@@ -1183,7 +1216,7 @@
   <div class="hero-deco-circle2"></div>
   <div class="hero-inner">
     <div>
-      <div class="hero-eyebrow">湘南・町田エリア対応</div>
+      <div class="hero-eyebrow">藤沢・横浜エリア対応</div>
       <h1 class="hero-title">
         誰よりも強く、
         <span class="accent">誰よりも速い</span>
@@ -1191,7 +1224,7 @@
       </h1>
       <p class="hero-subtitle">史上最高のパフォーマンスを、あなたに。</p>
       <p class="hero-desc">
-        湘南・町田エリアを中心に活動するフィジカルトレーナー渋谷泰紀。
+        藤沢・横浜エリアを中心に活動するフィジカルトレーナー渋谷泰紀。
         サッカーを中心に多様なスポーツの選手を対象に、
         パーソナルから高校・チームまで幅広くサポートします。
       </p>
@@ -1225,7 +1258,7 @@
         <div class="hero-photo-badge-label">Physical Trainer</div>
         <div class="hero-photo-badge-name">渋谷 泰紀</div>
       </div>
-      <div class="hero-photo-tag">湘南・町田</div>
+      <div class="hero-photo-tag">藤沢・横浜</div>
     </div>
   </div>
 </section>
@@ -1235,7 +1268,7 @@
   <div class="container">
     <div class="section-eyebrow">PROFILE</div>
     <h2 class="section-title">フィジカルトレーナー<br>渋谷 泰紀について</h2>
-    <p class="section-desc">湘南ベルマーレアスレティックセンターでの経験を活かし、現在は湘南・町田エリアを中心にサッカーをはじめ多様なスポーツ選手のフィジカル強化をサポートしています。</p>
+    <p class="section-desc">湘南ベルマーレアスレティックセンターでの経験を活かし、現在は藤沢・横浜エリアを中心にサッカーをはじめ多様なスポーツ選手のフィジカル強化をサポートしています。</p>
     <div class="profile-layout">
       <div class="profile-photo-card fade-up">
         <div class="profile-photo-wrap">
@@ -1248,7 +1281,7 @@
           <div class="profile-tags">
             <span class="tag">フィジカルトレーナー</span>
             <span class="tag">サッカー専門</span>
-            <span class="tag">湘南・町田</span>
+            <span class="tag">藤沢・横浜</span>
           </div>
         </div>
         <div class="profile-sns">
@@ -1431,6 +1464,10 @@
           <li>スピード・アジリティ・パワー向上</li>
           <li>怪我予防・コンディショニング</li>
         </ul>
+        <div class="service-price">
+          <div class="service-price-row"><span class="service-price-label">学生</span><span class="service-price-value">¥8,800</span></div>
+          <div class="service-price-row"><span class="service-price-label">大人</span><span class="service-price-value">¥13,750</span></div>
+        </div>
       </div>
       <div class="service-card fade-up fade-up-delay-1">
         <div class="service-num">02</div>
@@ -1443,24 +1480,13 @@
           <li>中学・高校・クラブチーム対応</li>
           <li>シーズン計画のサポート</li>
         </ul>
+        <div class="service-price">
+          <div class="service-price-row"><span class="service-price-label">1回2時間</span><span class="service-price-value">¥33,000</span></div>
+        </div>
       </div>
       <div class="service-card fade-up fade-up-delay-2">
-        <div class="service-badge" style="display:inline-block; background:var(--orange); color:#fff; font-size:0.68rem; font-weight:700; padding:4px 12px; border-radius:20px; letter-spacing:0.08em; margin-bottom:20px;">月額¥1,500</div>
-        <div class="service-num">03</div>
-        <div class="service-bar"></div>
-        <div class="service-name">オンラインサロン</div>
-        <p class="service-desc">いつでもどこでもトレーニング動画・コラム・Q&Aコンテンツにアクセスできる会員制サービス。選手も保護者も一緒に学べます。</p>
-        <ul class="service-features">
-          <li>いつでもどこでも見られるトレーニング動画</li>
-          <li>選手・保護者どちらも学べる！</li>
-          <li>スペシャルコンテンツも配信！</li>
-          <li>質問もできる！</li>
-          <li>月額¥1,500</li>
-        </ul>
-      </div>
-      <div class="service-card fade-up fade-up-delay-3">
         <div class="service-badge" style="display:inline-block; background:var(--orange); color:#fff; font-size:0.68rem; font-weight:700; padding:4px 12px; border-radius:20px; letter-spacing:0.08em; margin-bottom:20px;">チーム向け</div>
-        <div class="service-num">04</div>
+        <div class="service-num">03</div>
         <div class="service-bar"></div>
         <div class="service-name">フィジカルチェック</div>
         <p class="service-desc">チーム全体のパフォーマンスを"見える化"する取り組みです。"なんとなく"をデータに変え、選手の強み・弱点を数値で明確にします。</p>
@@ -1470,79 +1496,28 @@
           <li>瞬発力（垂直跳び・立ち5段跳び）</li>
           <li>持久力（YO-YO テスト IR1）</li>
           <li>レーダーチャートで結果をフィードバック</li>
-          <li>¥2,750／人（20名以上のチーム単位）</li>
         </ul>
+        <div class="service-price">
+          <div class="service-price-row"><span class="service-price-label">1人あたり<span style="font-size:0.7rem; color:var(--gray); margin-left:6px;">※20名以上のチーム単位</span></span><span class="service-price-value">¥2,750</span></div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== ONLINE SALON ========== -->
-<section id="salon">
-  <div class="container">
-    <div class="salon-layout">
-      <div class="salon-content fade-up">
-        <div class="section-eyebrow" style="color:var(--orange);">ONLINE SALON</div>
-        <h2 class="section-title" style="color:#fff;">オンラインサロンで<br>ともに成長しよう</h2>
-        <p class="section-desc" style="color:rgba(255,255,255,0.55);">会員限定のトレーニング動画・コラム・Q&Aコンテンツを毎月配信。場所や時間を選ばず、フィジカルトレーナーの知識と指導を手元に届けます。</p>
-        <ul class="salon-list">
-          <li>いつでもどこでも見られるトレーニング動画</li>
-          <li>スプリント・アジリティ・ストレングスなど全ジャンル対応</li>
-          <li>トレーニングコラムを定期掲載</li>
-          <li>会員限定Q&Aでダイレクトに質問できる</li>
-          <li>いつでも解約可能な月額サブスク（¥1,500）</li>
+      <div class="service-card fade-up fade-up-delay-3">
+        <div class="service-badge" style="display:inline-block; background:var(--orange); color:#fff; font-size:0.68rem; font-weight:700; padding:4px 12px; border-radius:20px; letter-spacing:0.08em; margin-bottom:20px;">無料デモ受付中</div>
+        <div class="service-num">04</div>
+        <div class="service-bar"></div>
+        <div class="service-name">フィジカルアドバイザー</div>
+        <div class="service-sub">GPSデータ分析・アプリ運用</div>
+        <p class="service-desc">GPSの数値を分析してアプリを運用。試合数値のフィードバックとトレーニング提案まで一貫サポート。遠隔対応で全国どこでも可能です。</p>
+        <ul class="service-features">
+          <li>GPSの数値を分析・アプリ運用</li>
+          <li>トレーニング提案</li>
+          <li>試合の数値のフィードバック</li>
+          <li>無料デモ（2週間・最大2試合・うち1試合のReview）受付中！</li>
+          <li>遠隔対応で全国どこでも可！</li>
         </ul>
-        <a href="https://mosh.jp/services/251888?openExternalBrowser=1" target="_blank" class="btn-orange">
-          サロンに参加する（MOSH）
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-      <div class="fade-up fade-up-delay-1">
-        <div class="salon-card">
-          <div class="salon-card-header">MEMBER CONTENT</div>
-          <div class="salon-card-title">会員限定コンテンツ</div>
-          <div class="salon-items">
-            <div class="salon-item">
-              <div class="salon-item-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polygon points="5,3 19,12 5,21" fill="rgba(255,255,255,0.7)"/></svg>
-              </div>
-              <div>
-                <div class="salon-item-name">トレーニング動画</div>
-                <div class="salon-item-sub">スプリント・アジリティ・ストレングス</div>
-              </div>
-            </div>
-            <div class="salon-item">
-              <div class="salon-item-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="rgba(255,255,255,0.7)" stroke-width="2"/><polyline points="14,2 14,8 20,8" stroke="rgba(255,255,255,0.7)" stroke-width="2"/></svg>
-              </div>
-              <div>
-                <div class="salon-item-name">トレーニングコラム</div>
-                <div class="salon-item-sub">栄養・リカバリー・フィジカル理論</div>
-              </div>
-            </div>
-            <div class="salon-item">
-              <div class="salon-item-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="rgba(255,255,255,0.7)" stroke-width="2"/></svg>
-              </div>
-              <div>
-                <div class="salon-item-name">会員限定Q&A</div>
-                <div class="salon-item-sub">トレーナーへ直接質問できる</div>
-              </div>
-            </div>
-            <div class="salon-item">
-              <div class="salon-item-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="rgba(255,255,255,0.7)" stroke-width="2"/><polyline points="12,6 12,12 16,14" stroke="rgba(255,255,255,0.7)" stroke-width="2"/></svg>
-              </div>
-              <div>
-                <div class="salon-item-name">月額サブスク</div>
-                <div class="salon-item-sub">いつでも入会・解約OK</div>
-              </div>
-            </div>
-          </div>
-          <div class="salon-card-footer">
-            <span>運営プラットフォーム：<strong>MOSH</strong></span>
-            <span>動画配信：<strong>Vimeo</strong></span>
-          </div>
+        <div class="service-price">
+          <div class="service-price-row"><span class="service-price-label">データ管理プラン</span><span class="service-price-value">¥33,000〜<span style="font-size:0.7rem; color:var(--gray); font-weight:500;">/月</span></span></div>
+          <div class="service-price-row"><span class="service-price-label">分析プラン</span><span class="service-price-value">¥44,000〜<span style="font-size:0.7rem; color:var(--gray); font-weight:500;">/月</span></span></div>
         </div>
       </div>
     </div>
@@ -1592,7 +1567,7 @@
           <div class="contact-info-icon">📍</div>
           <div>
             <div class="contact-info-label">対応エリア</div>
-            <div class="contact-info-value">湘南・町田エリア中心<br><span style="font-size:0.82rem; font-weight:400; color:var(--gray);">レンタルジム対応 / オンライン対応あり</span></div>
+            <div class="contact-info-value">藤沢・横浜エリア中心<br><span style="font-size:0.82rem; font-weight:400; color:var(--gray);">レンタルジム対応 / オンライン対応あり</span></div>
           </div>
         </div>
         <div class="contact-info-item">
@@ -1618,7 +1593,7 @@
             <li>サッカーのスピード・パワーを伸ばしたい</li>
             <li>怪我をしにくいカラダを作りたい</li>
             <li>チームのフィジカルレベルを向上させたい</li>
-            <li>選手として上のレベルを目指したい！</li>
+            <li>プロを目指す選手のサポートをしたい</li>
           </ul>
         </div>
       </div>
@@ -1635,7 +1610,7 @@
             <div class="contact-faq-title">よくあるご相談</div>
             <div class="faq-item">パーソナルトレーニングの料金・スケジュールについて</div>
             <div class="faq-item">チームへの出張・フィジカルチェックのご依頼</div>
-            <div class="faq-item">オンラインサロンの詳細・入会について</div>
+            <div class="faq-item">GPSデータ分析・アプリ運用（フィジカルアドバイザー）について</div>
             <div class="faq-item">まずは気軽に相談したい</div>
           </div>
         </div>
@@ -1658,7 +1633,7 @@
             <div class="sub">PHYSICAL TRAINER TAIKI SHIBUYA</div>
           </div>
         </div>
-        <p class="footer-desc">湘南・町田エリアを中心に活動するフィジカルトレーナー。パーソナルからチームまで、アスリートの可能性を最大限に引き出します。</p>
+        <p class="footer-desc">藤沢・横浜エリアを中心に活動するフィジカルトレーナー。パーソナルからチームまで、アスリートの可能性を最大限に引き出します。</p>
       </div>
       <div>
         <div class="footer-col-title">MENU</div>
@@ -1667,7 +1642,6 @@
           <li><a href="#profile">プロフィール</a></li>
           <li><a href="#mission">ミッション</a></li>
           <li><a href="#services">サービス</a></li>
-          <li><a href="#salon">オンラインサロン</a></li>
           <li><a href="#flow">ご利用の流れ</a></li>
           <li><a href="#contact">お問い合わせ</a></li>
         </ul>
@@ -1677,8 +1651,8 @@
         <ul class="footer-links">
           <li><a href="#services">パーソナルトレーニング</a></li>
           <li><a href="#services">チームトレーニング</a></li>
-          <li><a href="#salon">オンラインサロン</a></li>
           <li><a href="#services">フィジカルチェック</a></li>
+          <li><a href="#services">フィジカルアドバイザー</a></li>
         </ul>
       </div>
     </div>
